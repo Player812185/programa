@@ -1,0 +1,30 @@
+.header__container {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__icon {
+    width: 160px;
+}
+
+.header__navigation {
+    display: flex;
+    gap: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #424467;
+}
+
+.button {
+    border-radius: 12px;
+    padding: 13px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.button_color_yellow {
+    background-color: #F2B705;
+}
