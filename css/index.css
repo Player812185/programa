@@ -1,8 +1,51 @@
+/*? Button and Modifiers */
+
+.button {
+    display: inline-block;
+    border-radius: 12px;
+    padding: 13px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    justify-content: center;
+}
+
+.button_color_yellow {
+    background-color: #F2B705;
+}
+
+.button_color_blue {
+    background-color: #616be8;
+}
+
+/*? Text and modifiers */
+
+.text_title1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+}
+
+.text_title2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.text_paragraph {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/*? Header */
+
 .header__container {
     margin-top: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 85px;
 }
 
 .header__icon {
@@ -14,17 +57,40 @@
     gap: 32px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    color: #424467;
 }
 
-.button {
-    border-radius: 12px;
-    padding: 13px 24px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    color: #fff;
+/*? Hero */
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.button_color_yellow {
-    background-color: #F2B705;
+.hero__title {
+    margin-bottom: 16px;
+}
+
+.hero__paragraph {
+    margin-bottom: 54px;
+}
+
+.hero__button {
+    min-width: 350px;
+    text-align: center;
+}
+
+.hero__background-image {
+    margin-top: -197px;
+}
+
+/*? Offers */
+
+.offers__title {
+    width: 635px;
+    margin-bottom: 40px;
+}
+
+.offers__paragraph {
+    width: 585px;
 }
