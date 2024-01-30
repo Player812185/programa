@@ -86,11 +86,19 @@
 
 /*? Offers */
 
+
+.offers__container {
+    display: flex;
+}
+
 .offers__title {
-    width: 635px;
     margin-bottom: 40px;
 }
 
 .offers__paragraph {
     width: 585px;
+}
+
+.offers__item {
+    display: flex;
 }
