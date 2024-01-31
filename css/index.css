@@ -29,7 +29,7 @@
 
 .text_title2 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 40px;
 }
 
@@ -43,6 +43,7 @@
     font-weight: 500;
     font-size: 16px;
     color: #8b8fbb;
+    font-size: 16px;
 }
 
 /*? Header */
@@ -97,10 +98,15 @@
 
 /*? Offers */
 
+.offers {
+    background-color: #fff;
+    padding-block: 82px;
+}
 
 .offers__container {
     display: flex;
     gap: 30px;
+    margin-bottom: 76.4px;
 }
 
 .offers__descriptions,
@@ -109,8 +115,6 @@
 }
 
 .offers__title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
     margin-bottom: 40px;
     line-height: normal;
 }
@@ -125,21 +129,21 @@
     gap: 40px;
 }
 
-.offers__item-paragraph {
+.offer-card__item-paragraph {
     line-height: 22px;
 }
 
-.offers__item {
+.offer-card {
     display: flex;
     align-items: start;
     gap: 30px;
 }
 
-.offers__item-title {
+.offer-card__item-title {
     margin-bottom: 16px;
 }
 
-.offers__text {
+.offer-card__text {
     display: flex;
     flex-direction: column;
     margin-top: 5px;
@@ -150,4 +154,30 @@
         flex-direction: column;
         align-items: center;
     }
+}
+
+/*? Controls */
+
+.controls__container {
+    padding-block: 76px;
+}
+
+.controls__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 52px;
+    align-items: center;
+}
+
+.controls__paragraph {
+    font-size: 18px;
+}
+
+.controls__items {
+    display: flex;
+    gap: 30px;
+}
+
+.controls__item {
+    flex-basis: 33.33%;
 }
