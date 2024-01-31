@@ -5,7 +5,6 @@
 	border: 0;
 	font-family: 'Manrope', sans-serif;
 	font-weight: 400;
-	line-height: 120%;
 	color: #424467;
 }
 
@@ -101,7 +100,7 @@ h6 {
 }
 
 .container {
-	max-width: 1110px;
+	max-width: 1140px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
