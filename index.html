@@ -5,121 +5,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Прог-ма по спецтехнике</title>
-    <link rel="stylesheet" href="css/null.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="src/css/null.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/fonts.css">
+    <script src="https://unpkg.com/imask@7.3.0/dist/imask.js" defer></script>
+    <script src="https://fb24m.site/ftml-plugin-imask.js" defer></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__container container">
-            <img src="img/logo.svg" alt="Аватар сайта" class="header__icon">
-            <ul class="header__navigation">
-                <li class="header__navigation-item"><a href="#" class="header__navigation-link">Главная</a></li>
-                <li class="header__navigation-item"><a href="#" class="header__navigation-link">Возможности</a></li>
-                <li class="header__navigation-item"><a href="#" class="header__navigation-link">Тариф</a></li>
-                <li class="header__navigation-item"><a href="#" class="header__navigation-link">Контакты</a></li>
-            </ul>
-            <a href="#" class="header__button button button_color_yellow">Попробовать бесплатно</a>
-        </div>
-    </header>
-    <main class="main">
-        <div class="hero">
-            <div class="hero__container container">
-                <h1 class="hero__title text text_title1">ERP система для компаний по аренде спецтехники</h1>
-                <p class="hero__paragraph text text_paragraph">SABTRANS автоматизирует бизнес-процессы, наведет
-                    порядок
-                    в
-                    финансах,
-                    поможет увеличить продажи и покажет реальную прибыль.</p>
-                <a href="#" class="hero__button button button_color_blue">Оставить заявку</a>
-                <img src="img/pic_fon.svg" alt="Фон" class="hero__background-image">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <img src="./public/img/logo.svg" alt="Аватар сайта" class="header__icon">
+                <ul class="header__navigation">
+                    <li class="header__navigation-item"><a href="#" class="header__navigation-link">Главная</a></li>
+                    <li class="header__navigation-item"><a href="#" class="header__navigation-link">Возможности</a></li>
+                    <li class="header__navigation-item"><a href="#" class="header__navigation-link">Тариф</a></li>
+                    <li class="header__navigation-item"><a href="#" class="header__navigation-link">Контакты</a></li>
+                </ul>
+                <a href="#" class="header__button button button_color_yellow">Попробовать бесплатно</a>
             </div>
-        </div>
-        <div class="offers">
-            <div class="offers__container container">
-                <div class="offers__descriptions">
-                    <h2 class="offers__title text text_title2">Мы предлагаем полный набор инструментов</h2>
-                    <p class="offers__paragraph text text_paragraph">для управления взаимоотношениями с клиентами,
-                        комплексной автоматизации бизнеса, а также успешного развития корпоративной информационной
-                        системы.
-                        Удобный и понятный интерфейс позволяет эффективно работать c системой из любой точки мира.
-                        Внедрение
-                        SABTRANS системы позволит значительно повысить производительность менеджеров, а также
-                        увеличит
-                        объем
-                        продаж.</p>
-                </div>
-                <div class="offers__list">
-                    <div class="offers__item offer-card">
-                        <img src="img/icons/pulse.svg" alt="Пульс" class="offer-card__image">
-                        <div class="offer-card__text">
-                            <h3 class="offer-card__item-title text text_title3">Биржа</h3>
-                            <p class="offer-card__item-paragraph text text_paragraph">Cпециальная возможность в системе,
-                                на
-                                которой
-                                люди
-                                заключают сделки по аренде спецтехники.</p>
-                        </div>
-                    </div>
-                    <div class="offers__item offer-card">
-                        <img src="img/icons/clock.svg" alt="Пульс" class="offer-card__image">
-                        <div class="offer-card__text">
-                            <h3 class="offer-card__item-title text text_title3">Аналитика</h3>
-                            <p class="offer-card__item-paragraph text text_paragraph">Анализирует данные о клиентах,
-                                заказов, звонках, чтобы помочь и упростить принятие более эффективных бизнес-решений</p>
-                        </div>
-                    </div>
-                    <div class="offers__item offer-card">
-                        <img src="img/icons/document.svg" alt="Пульс" class="offer-card__image">
-                        <div class="offer-card__text">
-                            <h3 class="offer-card__item-title text text_title3">Заказы</h3>
-                            <p class="offer-card__item-paragraph text text_paragraph">Модуль позволяется вести заказы,
-                                выставлять и автоматически отправлять клиентам счета, коммерческие предложения.</p>
-                        </div>
-                    </div>
+        </header>
+        <main class="main">
+            <div class="hero">
+                <div class="hero__container container">
+                    <h1 class="hero__title text text_title1">ERP система для компаний по аренде спецтехники</h1>
+                    <p class="hero__paragraph text text_paragraph">SABTRANS автоматизирует бизнес-процессы, наведет
+                        порядок
+                        в
+                        финансах,
+                        поможет увеличить продажи и покажет реальную прибыль.</p>
+                    <a href="#" class="hero__button button button_color_blue">Оставить заявку</a>
+                    <img src="./public/img/pic_fon.svg" alt="Фон" class="hero__background-image">
                 </div>
             </div>
-        </div>
-        <div class="controls">
-            <div class="controls__container container">
-                <div class="controls__header">
-                    <h2 class="controls__title text text_title2">А так же</h2>
-                    <p class="controls__paragraph text text_paragraph">SABTRANS система охватывает все направления
-                        деятельности компании</p>
-                </div>
-                <div class="controls__items">
-                    <div class="controls__item offer-card">
-                        <img src="img/icons/funnel.svg" alt="Воронка" class="offer-card__image">
-                        <div class="offer-card__text">
-                            <h3 class="offer-card__item-title text text_title3">Лиды</h3>
-                            <p class="offer-card__item-paragraph text text_paragraph">можно собирать лиды не только с
-                                сайтов, но и с мессенджеров, почтовых клиентов, социальных сетей и других источников. И
-                                еще какой-нибудь текст.</p>
-                        </div>
+            <div class="offers">
+                <div class="offers__container container">
+                    <div class="offers__descriptions">
+                        <h2 class="offers__title text text_title2">Мы предлагаем полный набор инструментов</h2>
+                        <p class="offers__paragraph text text_paragraph">для управления взаимоотношениями с клиентами,
+                            комплексной автоматизации бизнеса, а также успешного развития корпоративной информационной
+                            системы.
+                            Удобный и понятный интерфейс позволяет эффективно работать c системой из любой точки мира.
+                            Внедрение
+                            SABTRANS системы позволит значительно повысить производительность менеджеров, а также
+                            увеличит
+                            объем
+                            продаж.</p>
                     </div>
-                    <div class="controls__item offer-card">
-                        <img src="img/icons/ruble.svg" alt="Рубль" class="offer-card__image">
-                        <div class="offer-card__text">
-                            <h3 class="offer-card__item-title text text_title3">Финансы</h3>
-                            <p class="offer-card__item-paragraph text text_paragraph">Все плановые и фактические
-                                транзакции доступны во вкладке "Финансы". Не переключаясь между разделами, вносите новые
-                                и редактируйте уже существующие.</p>
+                    <div class="offers__list">
+                        <div class="offers__item offer-card">
+                            <img src="./public/img/icons/pulse.svg" alt="Пульс" class="offer-card__image">
+                            <div class="offer-card__text">
+                                <h3 class="offer-card__item-title text text_title4">Биржа</h3>
+                                <p class="offer-card__item-paragraph text text_paragraph">Cпециальная возможность в
+                                    системе,
+                                    на
+                                    которой
+                                    люди
+                                    заключают сделки по аренде спецтехники.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="controls__item offer-card">
-                        <img src="img/icons/screw.svg" alt="Гайка" class="offer-card__image">
-                        <div class="offer-card__text">
-                            <h3 class="offer-card__item-title text text_title3">Интеграция</h3>
-                            <p class="offer-card__item-paragraph text text_paragraph">Сайт, соцсети, мессенджеры,
-                                телефония, почта - со всех каналов взаимодействия заявки автоматически попадут в
-                                систему.</p>
+                        <div class="offers__item offer-card">
+                            <img src="./public/img/icons/clock.svg" alt="Пульс" class="offer-card__image">
+                            <div class="offer-card__text">
+                                <h3 class="offer-card__item-title text text_title4">Аналитика</h3>
+                                <p class="offer-card__item-paragraph text text_paragraph">Анализирует данные о клиентах,
+                                    заказов, звонках, чтобы помочь и упростить принятие более эффективных бизнес-решений
+                                </p>
+                            </div>
+                        </div>
+                        <div class="offers__item offer-card">
+                            <img src="./public/img/icons/document.svg" alt="Пульс" class="offer-card__image">
+                            <div class="offer-card__text">
+                                <h3 class="offer-card__item-title text text_title4">Заказы</h3>
+                                <p class="offer-card__item-paragraph text text_paragraph">Модуль позволяется вести
+                                    заказы,
+                                    выставлять и автоматически отправлять клиентам счета, коммерческие предложения.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
+            <div class="controls">
+                <div class="controls__container container">
+                    <div class="controls__header">
+                        <h2 class="controls__title text text_title2">А так же</h2>
+                        <p class="controls__paragraph text text_paragraph">SABTRANS система охватывает все направления
+                            деятельности компании</p>
+                    </div>
+                    <div class="controls__items">
+                        <div class="controls__item offer-card">
+                            <img src="./public/img/icons/funnel.svg" alt="Воронка" class="offer-card__image">
+                            <div class="offer-card__text">
+                                <h3 class="offer-card__item-title text text_title4">Лиды</h3>
+                                <p class="offer-card__item-paragraph text text_paragraph">можно собирать лиды не только
+                                    с
+                                    сайтов, но и с мессенджеров, почтовых клиентов, социальных сетей и других
+                                    источников. И
+                                    еще какой-нибудь текст.</p>
+                            </div>
+                        </div>
+                        <div class="controls__item offer-card">
+                            <img src="./public/img/icons/ruble.svg" alt="Рубль" class="offer-card__image">
+                            <div class="offer-card__text">
+                                <h3 class="offer-card__item-title text text_title4">Финансы</h3>
+                                <p class="offer-card__item-paragraph text text_paragraph">Все плановые и фактические
+                                    транзакции доступны во вкладке "Финансы". Не переключаясь между разделами, вносите
+                                    новые
+                                    и редактируйте уже существующие.</p>
+                            </div>
+                        </div>
+                        <div class="controls__item offer-card">
+                            <img src="./public/img/icons/screw.svg" alt="Гайка" class="offer-card__image">
+                            <div class="offer-card__text">
+                                <h3 class="offer-card__item-title text text_title4">Интеграция</h3>
+                                <p class="offer-card__item-paragraph text text_paragraph">Сайт, соцсети, мессенджеры,
+                                    телефония, почта - со всех каналов взаимодействия заявки автоматически попадут в
+                                    систему.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="request">
+                <div class="request__container container">
+                    <h2 class="request__title text text_title3"> Оставь заявку прямо сейчас и получи 30 дней бесплатного
+                        пользования
+                        системой
+                    </h2>
+                    <form action="#" class="request__form">
+                        <input type="text" placeholder="Имя" class="request__input-text input-text">
+                        <input type="text" placeholder="Телефон" class="request__input-text input-text"
+                            data-mask="+7 (000) 000 00-00">
+                        <button class="request__button input-button button button_color_yellow" type="submit">Оставить
+                            заявку</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 
 </html>

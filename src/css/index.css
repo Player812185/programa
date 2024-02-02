@@ -35,6 +35,12 @@
 
 .text_title3 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.text_title4 {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 20px;
 }
@@ -44,6 +50,22 @@
     font-size: 16px;
     color: #8b8fbb;
     font-size: 16px;
+}
+
+.input-text {
+    max-width: 350px;
+    width: 100%;
+    padding: 13px 16px;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.input-text::placeholder {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8b8fbb;
 }
 
 /*? Header */
@@ -180,4 +202,46 @@
 
 .controls__item {
     flex-basis: 33.33%;
+}
+
+/*? Request */
+
+.request {
+    background-color: #616be8;
+    padding-block: 60px;
+}
+
+.request__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.request__title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 52px;
+    line-height: 40px;
+}
+
+.request__form {
+    display: flex;
+    gap: 30px;
+}
+
+.request__input-text,
+.request__button {
+    flex-basis: 33.33%;
+}
+
+.request__button {
+    padding: 13px 97px;
+    font-size: 18px;
+}
+
+.request__button::placeholder {
+    border-radius: 12px;
+    padding: 13px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
 }
