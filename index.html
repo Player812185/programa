@@ -145,12 +145,14 @@
       </div>
       <div class="calculation">
         <div class="calculation__container container">
-          <h2 class="calculation__title text text_title2">Расчет стоимости SAP системы</h2>
-          <p class="calculation__subtext text text_paragraph">Точная стоимость зависит от количества автоматизируемых
-            пользователей или техники, а так же других функций, которые вы хотите подключить</p>
+          <div class="calculation__header">
+            <h2 class="calculation__title text text_title2">Расчет стоимости SAP системы</h2>
+            <p class="calculation__subtext text text_paragraph">Точная стоимость зависит от количества автоматизируемых
+              пользователей или техники, а так же других функций, которые вы хотите подключить</p>
+          </div>
           <form class="calculation__form" action="#">
             <div class="calculation__card">
-              <h3 class="calculation__subtitle">Выберите какие функции надо подключить</h3>
+              <h3 class="calculation__subtitle text text_title3">Выберите какие функции надо подключить</h3>
               <div class="calculation__calculator">
                 <div class="calculation__row">
                   <div class="calculation__block">
@@ -159,10 +161,17 @@
                       кол-во</label>
                     <input type="number" class="calculation__count" placeholder="83">
                   </div>
+                  <div class="calculation__block">
+                    <div class="calculation__price-list">
+                      <p class="calculation__price-item">
+                        Стоимость, ₽: <span>20</span>
+                      </p>
+                      <p class="calculation__price-item">
+                        Итого, ₽: <span>1 660</span>
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="calculation__total">
-
               </div>
             </div>
           </form>

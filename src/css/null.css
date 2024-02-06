@@ -43,7 +43,6 @@ body {
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-	background-color: #f9f9ff;
 }
 
 input,
@@ -107,6 +106,7 @@ h6 {
 
 img {
 	max-width: 100%;
+	pointer-events: none
 }
 
 details summary {
@@ -119,4 +119,8 @@ details summary:hover {
 
 a {
 	color: inherit
+}
+
+.wrapper {
+	background-color: #f9f9ff;
 }
