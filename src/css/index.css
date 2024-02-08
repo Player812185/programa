@@ -297,3 +297,19 @@
 .calculation__price-list {}
 
 .calculation__price-item {}
+
+/*? Partners */
+
+.partners {
+    background-color: #F2B705;
+}
+
+.partners__container {}
+
+.partners__title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.partners__company {}
