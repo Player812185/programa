@@ -304,7 +304,11 @@
     background-color: #F2B705;
 }
 
-.partners__container {}
+.partners__container {
+    display: flex;
+    flex-direction: column;
+    padding-block: 50px;
+}
 
 .partners__title {
     color: #fff;
@@ -312,4 +316,45 @@
     margin-bottom: 40px;
 }
 
-.partners__company {}
+.partners__companies {
+    display: flex;
+    gap: 140px;
+    align-items: center;
+}
+
+/*? Why */
+
+.why__container {
+    padding-block: 77px;
+}
+
+.why__title {
+    margin-bottom: 52px;
+}
+
+.why__items {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    margin-right: 128px;
+}
+
+.why__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.why__item-paragraph {
+    font-weight: 400;
+}
+
+.why__button {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 13px 97px;
+}
+
+.why__image {
+    margin-top: -480px;
+}
