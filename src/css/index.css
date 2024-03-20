@@ -77,7 +77,7 @@
     margin-bottom: 85px;
 }
 
-.header__icon {
+.header__logo {
     max-width: 160px;
 }
 
@@ -406,4 +406,45 @@
 
 .faq__description-subtitle {
     max-width: 350px;
+}
+
+/*? Contacts */
+
+.contacts__container {
+    padding-block: 82px;
+}
+
+.contacts__title {
+    margin-bottom: 52px;
+}
+
+.contacts__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/*? Footer */
+
+.footer {}
+
+.footer__container {}
+
+.footer__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 20px;
+}
+
+.footer__navigation-copyright {
+    font-family: "Manrope";
+    font-weight: 400;
+    font-size: 12px;
+    color: #c8cced;
 }

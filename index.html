@@ -16,7 +16,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container container">
-        <img src="./public/img/logo.svg" alt="Аватар сайта" class="header__icon">
+        <img src="./public/img/logo.svg" alt="Аватар сайта" class="header__logo">
         <ul class="header__navigation">
           <li class="header__navigation-item"><a href="#" class="header__navigation-link">Главная</a></li>
           <li class="header__navigation-item"><a href="#" class="header__navigation-link">Возможности</a></li>
@@ -264,7 +264,60 @@
           </div>
         </div>
       </div>
+      <div class="contacts">
+        <div class="contacts__container container">
+          <h2 class="contacts__title text text_title2">Контакты</h2>
+          <div class="contacts__items">
+            <div class="contact__item">
+              <img src="./public/img/icons/phone.svg" alt="смартфон" class="contact__item-image">
+              <p class="contact__item-text text text_paragraph">+7 (999) 888-00-00</p>
+            </div>
+            <div class="contact__item">
+              <img src="./public/img/icons/mail.svg" alt="конверт" class="contact__item-image">
+              <p class="contact__item-text text text_paragraph">sabtrans@mail.ru</p>
+            </div>
+            <div class="contact__item">
+              <img src="./public/img/icons/map.svg" alt="знак карты" class="contact__item-image">
+              <p class="contact__item-text text text_paragraph">Г. Москва, Мясницкая 4, к2, стр1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="request">
+        <div class="request__container container">
+          <h2 class="request__title text text_title3">Остались еще вопросы?
+            Оставьте заявку и мы свяжемся с вами в ближайшее время
+          </h2>
+          <form action="#" class="request__form">
+            <input type="text" placeholder="Имя" class="request__input-text input-text">
+            <input type="text" placeholder="Телефон" class="request__input-text input-text"
+              data-mask="+7 (000) 000 00-00">
+            <button class="request__button input-button button button_color_yellow" type="submit">Оставить
+              заявку</button>
+          </form>
+        </div>
+      </div>
     </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <ul class="footer__navigation">
+          <li class="footer__navigation-item">
+            <img src="./public/img/logo.svg" alt="" class="footer__logo">
+          </li>
+          <li class="footer__navigation-item">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="footer__navigation-link" target="_blank">
+              <img src="./public/img/icons/youtube.svg" alt="ютуб" class="footer__icon">
+            </a>
+            <a href="https://t.me/Player811" class="footer__navigation-link" target="_blank">
+              <img src="./public/img/icons/telegram.svg" alt="телеграм" class="footer__navigation-link">
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <p class="footer__navigation-copyright">© 2023 SABTRANS</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </div>
 </body>
 
