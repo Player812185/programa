@@ -246,57 +246,196 @@
 
 /*? Calculation */
 
-.calculation {}
-
 .calculation__container {
     padding-block: 82px;
 }
 
 .calculation__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.calculation__title {
-    line-height: 1.825;
-}
-
-.calculation__subtext {
-    font-size: 18px;
-    font-weight: 400;
     margin-bottom: 32px;
-    max-width: 873px;
+}
+
+.calculation__header-title {
+    line-height: 73px;
     text-align: center;
 }
 
-.calculation__form {}
-
-.calculation__card {
-    background-color: #fff;
+.calculation__header-paragraph {
+    line-height: 25px;
+    text-align: center;
 }
 
-.calculation__subtitle {}
+.calculation__calculator {
+    background-color: #fff;
+    border-radius: 18px;
+    padding: 24px;
+    margin-bottom: 45px;
+}
 
-.calculation__calculator {}
+.calculation__calculator-calculation {
+    display: flex;
+    justify-content: space-between;
+}
 
-.calculation__row {
+.calculation__calculator-title {
+    display: flex;
+    font-size: 24px;
+    margin-bottom: 24px;
+    align-items: flex-start;
+}
+
+.calculation__header-paragraph {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.calculation__calculator-calculation-choice {
     display: flex;
 }
 
-.calculation__block {}
-
-.calculation__checkbox {
-    accent-color: #f2b705;
+.calculation__calculator-calculation-choice-checkboxes {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
 }
 
-.calculation__checkbox-text {}
+.calculation__calculator-calculation-choice-checkboxes-item {
+    display: flex;
+    margin-bottom: 16px;
+}
 
-.calculation__count {}
+.calculation__calculator-calculation-choice-checkboxes-item:last-child {
+    margin-bottom: 0;
+}
 
-.calculation__price-list {}
+.calculation__calculator-calculation-choice-checkboxes-checkbox {
+    accent-color: #f2b705;
+    margin-bottom: 16px;
+}
 
-.calculation__price-item {}
+.calculation__calculator-calculation-choice-checkboxes-name {
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 8px;
+    margin-bottom: 16px;
+}
+
+.calculation__calculator-calculation-amount {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 16px;
+}
+
+.calculation__calculator-calculation-amount-input {
+    background-color: #e6ebfb;
+    max-width: 60px;
+    border-radius: 8px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.calculation__calculator-calculation-price {
+    display: flex;
+    gap: 23px;
+}
+
+.calculation__calculator-calculation-price-price-item-text {
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 17px;
+}
+
+.calculation__calculator-calculation-price-price-item-text-price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.calculation__calculator-calculation-price-total-item-text {
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 17px;
+}
+
+.calculation__calculator-calculation-price-total-item-text-price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.calculation__calculator-total {
+    background-color: #e6ebfb;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    align-items: center;
+}
+
+.calculation__calculator-total-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.calculation__calculator-total-price {
+    display: flex;
+    gap: 16px;
+}
+
+.calculation__calculator-total-price-day {
+    background-color: #616be8;
+    padding: 7px 23px;
+    border-radius: 12px;
+}
+
+.calculation__calculator-total-price-day-text {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    line-height: 27px;
+}
+
+.calculation__calculator-total-price-day-text-price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    line-height: 30px;
+}
+
+.calculation__calculator-total-price-month {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.calculation__calculator-total-price-month-price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.calculation__button {
+    padding: 13px 97px;
+    font-size: 18px;
+    margin-left: 292px;
+}
+
+.calculation__button::placeholder {
+    border-radius: 12px;
+    padding: 13px 90px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
 
 /*? Partners */
 
@@ -430,10 +569,6 @@
 }
 
 /*? Footer */
-
-.footer {}
-
-.footer__container {}
 
 .footer__navigation {
     display: flex;

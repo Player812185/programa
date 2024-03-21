@@ -146,157 +146,224 @@
       <div class="calculation">
         <div class="calculation__container container">
           <div class="calculation__header">
-            <h2 class="calculation__title text text_title2">Расчет стоимости SAP системы</h2>
-            <p class="calculation__subtext text text_paragraph">Точная стоимость зависит от количества автоматизируемых
-              пользователей или техники, а так же других функций, которые вы хотите подключить</p>
+            <h2 class="calculation__header-title text text_title2">Расчет стоимости SAP системы</h2>
+            <p class="calculation__header-paragraph">Точная стоимость зависит от количества
+              автоматизируемых пользователей или техники, а так же других функций, которые вы хотите подключить</p>
           </div>
-          <form class="calculation__form" action="#">
-            <div class="calculation__card">
-              <h3 class="calculation__subtitle text text_title3">Выберите какие функции надо подключить</h3>
-              <div class="calculation__calculator">
-                <div class="calculation__row">
-                  <div class="calculation__block">
-                    <input type="checkbox" class="calculation__checkbox" id="count">
-                    <label for="count" class="calculation__checkbox-text">Пользователи / техника,
-                      кол-во</label>
-                    <input type="number" class="calculation__count" placeholder="83">
+          <form action="#" class="calculation__form">
+            <div class="calculation__calculator">
+              <h2 class="calculation__calculator-title text text_title3">Выберите какие функции надо подключить</h2>
+              <div class="calculation__calculator-calculation">
+                <div class="calculation__calculator-calculation-choice">
+                  <div class="calculation__calcaultor-calculation-choice-checkboxes">
+                    <div class="calculation__calculator-calculation-choice-checkboxes-item">
+                      <input type="checkbox" class="calculation__calculator-calculation-choice-checkboxes-checkbox"
+                        name="users/technique">
+                      <label class="calculation__calculator-calculation-choice-checkboxes-name">Пользователи / техника,
+                        кол-во</label>
+                    </div>
+                    <div class="calculation__calculator-calculation-choice-checkboxes-item">
+                      <input type="checkbox" class="calculation__calculator-calculation-choice-checkboxes-checkbox"
+                        name="1C_integration">
+                      <label class="calculation__calculator-calculation-choice-checkboxes-name">Интеграция 1С,
+                        кол-во</label>
+                    </div>
+                    <div class="calculation__calculator-calculation-choice-checkboxes-item">
+                      <input type="checkbox" class="calculation__calculator-calculation-choice-checkboxes-checkbox"
+                        name="record_storage">
+                      <label class="calculation__calculator-calculation-choice-checkboxes-name">Хранение записей,
+                        кол-во</label>
+                    </div>
+                    <div class="calculation__calculator-calculation-choice-checkboxes-item">
+                      <input type="checkbox" class="calculation__calculator-calculation-choice-checkboxes-checkbox"
+                        name="
+                    specialist_visit">
+                      <label class="calculation__calculator-calculation-choice-checkboxes-name">Выезд специалиста,
+                        кол-во</label>
+                    </div>
                   </div>
-                  <div class="calculation__block">
-                    <div class="calculation__price-list">
-                      <p class="calculation__price-item">
-                        Стоимость, ₽: <span>20</span>
+                  <div class="calculation__calculator-calculation-amount">
+                    <input type="number" placeholder="83" name="users/technique_amount"
+                      class="calculation__calculator-calculation-amount-input">
+                    <input type="number" placeholder="1" name="1C_integration_amount"
+                      class="calculation__calculator-calculation-amount-input">
+                    <input type="number" placeholder="1" name="record_storage_amount"
+                      class="calculation__calculator-calculation-amount-input">
+                  </div>
+                </div>
+                <div class="calculation__calculator-calculation-price">
+                  <div class="calculation__calculator-calculation-price-price">
+                    <div class="calculation__calculator-calculation-price-price-item">
+                      <p class="calculation__calculator-calculation-price-price-item-text text_paragraph">Стоимость, ₽:
+                        <span class="calculation__calculator-calculation-price-price-item-text-price">20</span>
                       </p>
-                      <p class="calculation__price-item">
-                        Итого, ₽: <span>1 660</span>
+                    </div>
+                    <div class="calculation__calculator-calculation-price-price-item">
+                      <p class="calculation__calculator-calculation-price-price-item-text text_paragraph">Стоимость, ₽:
+                        <span class="calculation__calculator-calculation-price-price-item-text-price">100</span>
+                      </p>
+                    </div>
+                    <div class="calculation__calculator-calculation-price-price-item">
+                      <p class="calculation__calculator-calculation-price-price-item-text text_paragraph">Стоимость, ₽:
+                        <span class="calculation__calculator-calculation-price-price-item-text-price">17</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="calculation__calculator-calculation-price-total">
+                    <div class="calculation__calculator-calculation-price-total-item">
+                      <p class="calculation__calculator-calculation-price-total-item-text text_paragraph">Итого, ₽:
+                        <span class="calculation__calculator-calculation-price-total-item-text-price">1 660</span>
+                      </p>
+                    </div>
+                    <div class="calculation__calculator-calculation-price-total-item">
+                      <p class="calculation__calculator-calculation-price-total-item-text text_paragraph">Итого, ₽:
+                        <span class="calculation__calculator-calculation-price-total-item-text-price">100</span>
+                      </p>
+                    </div>
+                    <div class="calculation__calculator-calculation-price-total-item">
+                      <p class="calculation__calculator-calculation-price-total-item-text text_paragraph">Итого, ₽:
+                        <span class="calculation__calculator-calculation-price-total-item-text-price">17</span>
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="calculation__calculator-total">
+                <h2 class="calculation__calculator-total-title">Итого цена подписки</h2>
+                <div class="calculation__calculator-total-price">
+                  <div class="calculation__calculator-total-price-day">
+                    <p class="calculation__calculator-total-price-day-text"><span
+                        class="calculation__calculator-total-price-day-text-price">1 770 ₽ /</span> сутки</p>
+                  </div>
+                  <p class="calculation__calculator-total-price-month"><span
+                      class="calculation__calculator-total-price-month-price">53 310 ₽ /</span> месяц</p>
+                </div>
+              </div>
             </div>
+            <button class="calculation__button button button_color_yellow" type="submit">Отправить заявку для
+              подключения</button>
           </form>
         </div>
-      </div>
-      <div class="partners">
-        <div class="partners__container container">
-          <div class="partners__title text text_title2">Наши партнёры</div>
-          <div class="partners__companies">
-            <img src="./public/img/Alfabank.svg" alt="Альфа банк" class="partners__company">
-            <img src="./public/img/tochka.svg" alt="Точка" class="partners__company">
-            <img src="./public/img/sber.svg" alt="Сбербанк" class="partners__company">
-          </div>
-        </div>
-      </div>
-      <div class="why">
-        <div class="why__container container">
-          <div class="why__items">
-            <h2 class="why__title text text_title2">Почему мы?</h2>
-            <div class="why__item">
-              <img src="./public/img/icons/lock.svg" alt="Замочек" class="why__item-image">
-              <p class="why__item-paragraph text text_paragraph">Безопасное хранение данных</p>
-            </div>
-            <div class="why__item">
-              <img src="./public/img/icons/support.svg" alt="Лицо и гарнитура с микрофоном" class="why__item-image">
-              <p class="why__item-paragraph text text_paragraph">Поддержка по телефону и в чате</p>
-            </div>
-            <div class="why__item">
-              <img src="./public/img/icons/smallerScrew.svg" alt="Шестерёнка поменьше" class="why__item-image">
-              <p class="why__item-paragraph text text_paragraph">Интеграция с внешними сервисами</p>
-            </div>
-            <div class="why__item">
-              <img src="./public/img/icons/smallerPulse.svg" alt="Пульс, но меньше" class="why__item-image">
-              <p class="why__item-paragraph text text_paragraph">Собственная биржа</p>
-            </div>
-            <div class="why__item">
-              <img src="./public/img/icons/app.svg" alt="Прям так и написано: APP" class="why__item-image">
-              <p class="why__item-paragraph text text_paragraph">Мобильное приложение</p>
-            </div>
-            <a href="#" class="why__button button button_color_yellow">Заказать звонок</a>
-          </div>
-          <img src="./public/img/pic_m.svg" alt="Фон" class="why__image">
-        </div>
-      </div>
-      <div class="faq">
-        <div class="faq__container container">
-          <div class="faq__items">
-            <details class="faq__item">
-              <summary class="faq__question">
-                Есть ли у вас обучение ?
-              </summary>
-              <p class="faq__answer">Конечно, и далее ответ</p>
-            </details>
-            <details class="faq__item">
-              <summary class="faq__question">
-                Еще один вопрос ?
-              </summary>
-              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ut quas dolores
-                eaque tempore! Dignissimos natus ratione dolorum sunt autem in exercitationem, saepe numquam? Itaque
-                pariatur doloremque laboriosam tempora ad.</p>
-            </details>
-            <details class="faq__item">
-              <summary class="faq__question">
-                Еще один вопрос, может состоять из двух строк и более, для примера ?
-              </summary>
-              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, laborum debitis
-                quidem dolore sunt veniam, dolorem pariatur nulla enim fuga accusantium voluptatibus consectetur? Ea
-                iste odit ipsum optio porro totam.</p>
-            </details>
-            <details class="faq__item">
-              <summary class="faq__question">
-                И пусть еще один короткий ?
-              </summary>
-              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officiis deleniti
-                earum porro molestiae vel accusamus, quasi ea, omnis, asperiores voluptates dolorum beatae numquam
-                necessitatibus. Assumenda beatae deleniti aperiam explicabo!</p>
-            </details>
-            <details class="faq__item">
-              <summary class="faq__question">
-                И еще один ?
-              </summary>
-              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quos harum sunt
-                facere magni hic quod, expedita eius fugit, ratione rem non? Eos culpa quis quo consequatur eius. Nam,
-                suscipit.</p>
-            </details>
-          </div>
-          <div class="faq__description">
-            <h2 class="faq__description-title text text_title2">- FAQ</h2>
-            <p class="faq__description-subtitle text text_title3">Есть вопросы? Посмотри здесь</p>
-          </div>
-        </div>
-      </div>
-      <div class="contacts">
-        <div class="contacts__container container">
-          <h2 class="contacts__title text text_title2">Контакты</h2>
-          <div class="contacts__items">
-            <div class="contact__item">
-              <img src="./public/img/icons/phone.svg" alt="смартфон" class="contact__item-image">
-              <p class="contact__item-text text text_paragraph">+7 (999) 888-00-00</p>
-            </div>
-            <div class="contact__item">
-              <img src="./public/img/icons/mail.svg" alt="конверт" class="contact__item-image">
-              <p class="contact__item-text text text_paragraph">sabtrans@mail.ru</p>
-            </div>
-            <div class="contact__item">
-              <img src="./public/img/icons/map.svg" alt="знак карты" class="contact__item-image">
-              <p class="contact__item-text text text_paragraph">Г. Москва, Мясницкая 4, к2, стр1</p>
+        <div class="partners">
+          <div class="partners__container container">
+            <div class="partners__title text text_title2">Наши партнёры</div>
+            <div class="partners__companies">
+              <img src="./public/img/Alfabank.svg" alt="Альфа банк" class="partners__company">
+              <img src="./public/img/tochka.svg" alt="Точка" class="partners__company">
+              <img src="./public/img/sber.svg" alt="Сбербанк" class="partners__company">
             </div>
           </div>
         </div>
-      </div>
-      <div class="request">
-        <div class="request__container container">
-          <h2 class="request__title text text_title3">Остались еще вопросы?
-            Оставьте заявку и мы свяжемся с вами в ближайшее время
-          </h2>
-          <form action="#" class="request__form">
-            <input type="text" placeholder="Имя" class="request__input-text input-text">
-            <input type="text" placeholder="Телефон" class="request__input-text input-text"
-              data-mask="+7 (000) 000 00-00">
-            <button class="request__button input-button button button_color_yellow" type="submit">Оставить
-              заявку</button>
-          </form>
+        <div class="why">
+          <div class="why__container container">
+            <div class="why__items">
+              <h2 class="why__title text text_title2">Почему мы?</h2>
+              <div class="why__item">
+                <img src="./public/img/icons/lock.svg" alt="Замочек" class="why__item-image">
+                <p class="why__item-paragraph text text_paragraph">Безопасное хранение данных</p>
+              </div>
+              <div class="why__item">
+                <img src="./public/img/icons/support.svg" alt="Лицо и гарнитура с микрофоном" class="why__item-image">
+                <p class="why__item-paragraph text text_paragraph">Поддержка по телефону и в чате</p>
+              </div>
+              <div class="why__item">
+                <img src="./public/img/icons/smallerScrew.svg" alt="Шестерёнка поменьше" class="why__item-image">
+                <p class="why__item-paragraph text text_paragraph">Интеграция с внешними сервисами</p>
+              </div>
+              <div class="why__item">
+                <img src="./public/img/icons/smallerPulse.svg" alt="Пульс, но меньше" class="why__item-image">
+                <p class="why__item-paragraph text text_paragraph">Собственная биржа</p>
+              </div>
+              <div class="why__item">
+                <img src="./public/img/icons/app.svg" alt="Прям так и написано: APP" class="why__item-image">
+                <p class="why__item-paragraph text text_paragraph">Мобильное приложение</p>
+              </div>
+              <a href="#" class="why__button button button_color_yellow">Заказать звонок</a>
+            </div>
+            <img src="./public/img/pic_m.svg" alt="Фон" class="why__image">
+          </div>
         </div>
-      </div>
+        <div class="faq">
+          <div class="faq__container container">
+            <div class="faq__items">
+              <details class="faq__item">
+                <summary class="faq__question">
+                  Есть ли у вас обучение ?
+                </summary>
+                <p class="faq__answer">Конечно, и далее ответ</p>
+              </details>
+              <details class="faq__item">
+                <summary class="faq__question">
+                  Еще один вопрос ?
+                </summary>
+                <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ut quas dolores
+                  eaque tempore! Dignissimos natus ratione dolorum sunt autem in exercitationem, saepe numquam? Itaque
+                  pariatur doloremque laboriosam tempora ad.</p>
+              </details>
+              <details class="faq__item">
+                <summary class="faq__question">
+                  Еще один вопрос, может состоять из двух строк и более, для примера ?
+                </summary>
+                <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, laborum debitis
+                  quidem dolore sunt veniam, dolorem pariatur nulla enim fuga accusantium voluptatibus consectetur? Ea
+                  iste odit ipsum optio porro totam.</p>
+              </details>
+              <details class="faq__item">
+                <summary class="faq__question">
+                  И пусть еще один короткий ?
+                </summary>
+                <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officiis deleniti
+                  earum porro molestiae vel accusamus, quasi ea, omnis, asperiores voluptates dolorum beatae numquam
+                  necessitatibus. Assumenda beatae deleniti aperiam explicabo!</p>
+              </details>
+              <details class="faq__item">
+                <summary class="faq__question">
+                  И еще один ?
+                </summary>
+                <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quos harum sunt
+                  facere magni hic quod, expedita eius fugit, ratione rem non? Eos culpa quis quo consequatur eius. Nam,
+                  suscipit.</p>
+              </details>
+            </div>
+            <div class="faq__description">
+              <h2 class="faq__description-title text text_title2">- FAQ</h2>
+              <p class="faq__description-subtitle text text_title3">Есть вопросы? Посмотри здесь</p>
+            </div>
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="contacts__container container">
+            <h2 class="contacts__title text text_title2">Контакты</h2>
+            <div class="contacts__items">
+              <div class="contact__item">
+                <img src="./public/img/icons/phone.svg" alt="смартфон" class="contact__item-image">
+                <p class="contact__item-text text text_paragraph">+7 (999) 888-00-00</p>
+              </div>
+              <div class="contact__item">
+                <img src="./public/img/icons/mail.svg" alt="конверт" class="contact__item-image">
+                <p class="contact__item-text text text_paragraph">sabtrans@mail.ru</p>
+              </div>
+              <div class="contact__item">
+                <img src="./public/img/icons/map.svg" alt="знак карты" class="contact__item-image">
+                <p class="contact__item-text text text_paragraph">Г. Москва, Мясницкая 4, к2, стр1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="request">
+          <div class="request__container container">
+            <h2 class="request__title text text_title3">Остались еще вопросы?
+              Оставьте заявку и мы свяжемся с вами в ближайшее время
+            </h2>
+            <form action="#" class="request__form">
+              <input type="text" placeholder="Имя" class="request__input-text input-text">
+              <input type="text" placeholder="Телефон" class="request__input-text input-text"
+                data-mask="+7 (000) 000 00-00">
+              <button class="request__button input-button button button_color_yellow" type="submit">Оставить
+                заявку</button>
+            </form>
+          </div>
+        </div>
     </main>
     <footer class="footer">
       <div class="footer__container container">
